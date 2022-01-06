@@ -1,15 +1,15 @@
 import javax.swing.JFrame;
-import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import java.awt.*;
 public class TextField extends JFrame {
    
     TextField(){
 
         setLayout(new FlowLayout());
-        JPasswordField tf1 = new JPasswordField();
-        JPasswordField tf2 = new JPasswordField(10);
-        JPasswordField tf3 = new JPasswordField("Hello");
-        JPasswordField tf4 = new JPasswordField("Hello",10);
+        JTextField tf1 = new JTextField();
+        JTextField tf2 = new JTextField(10);
+        JTextField tf3 = new JTextField("Hello");
+        JTextField tf4 = new JTextField("Hello",10);
         getContentPane().add(tf1);
         getContentPane().add(tf2);
         getContentPane().add(tf3);
