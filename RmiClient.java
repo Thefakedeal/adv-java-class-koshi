@@ -7,11 +7,9 @@ public class RmiClient {
         try{
             Registry reg = LocateRegistry.getRegistry();
 
-            RadiusCircleInterface stub = (RadiusCircleInterface) reg.lookup("koshi");
+            ProductInterface stub = (ProductInterface) reg.lookup("koshi1");
 
-            double area = stub.calculateArea(100);
-            System.out.println(area);
-            stub.printMsg("Hello From Client");
+            System.out.println(stub.product(2, 3));
             System.out.println("Method Invoked");
         }catch(Exception e){
             e.printStackTrace();

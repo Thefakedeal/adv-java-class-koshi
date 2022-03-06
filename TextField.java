@@ -15,7 +15,7 @@ public class TextField extends JFrame {
         getContentPane().add(tf3);
         getContentPane().add(tf4);
         getContentPane().setBackground(Color.BLACK);
-
+    
         setVisible(true);
         setSize(400,400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);

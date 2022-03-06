@@ -29,11 +29,7 @@ public class DataBaseClass {
                     System.out.println("name:"+rs.getString("name"));
                     System.out.println("age:"+rs.getInt("age"));
                 }
-                // c.close();
-        // }catch(SQLException e){
-        //     System.out.println("SQL Exception");
-        //     e.printStackTrace();
-        // }
+             
     }
 
     public void insertLast(String name, int age) throws SQLException{
@@ -68,7 +64,6 @@ public class DataBaseClass {
         System.out.println("INSERTED");
     }
     
-
 
     public void update(String name, int age,int id) throws SQLException{
         

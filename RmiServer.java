@@ -9,11 +9,11 @@ public class RmiServer {
     
     public static void main(String[] args) {
         try{
-            RadiusCircle rc = new RadiusCircle();
+            Product p = new Product();
 
-            RadiusCircleInterface skeleton = (RadiusCircleInterface) UnicastRemoteObject.exportObject(rc, 1111);
+            ProductInterface skeleton = (ProductInterface) UnicastRemoteObject.exportObject(p, 1111);
             Registry reg = LocateRegistry.getRegistry();
-            reg.bind("koshi", skeleton);
+            reg.bind("koshi1", skeleton);
             // reg.unbind("koshi");
             System.out.println("Registry Complete");
         }catch(Exception e){
